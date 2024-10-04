@@ -3,14 +3,14 @@ import HomePage from "./pages/HomePage";
 import FavoritesPage from "./pages/FavoritesPage";
 import NotFound from "./pages/NotFound";
 import { Route, Routes } from "react-router-dom";
-import SideBar from "./components/sidebar";
+import Bar from "./components/Bar";
 
 function App() {
   const location = useLocation();
 
   return (
     <div className="flex">
-      {location.pathname !== "/404" && <SideBar />}
+      {location.pathname !== "/404" && <Bar />}
 
       <Routes>
         <Route path="/" element={<HomePage />} />

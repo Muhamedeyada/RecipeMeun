@@ -1,7 +1,7 @@
 import { Heart, Home } from "lucide-react";
 import { Link } from "react-router-dom"; // Ensure you import Link from react-router-dom
 
-const SideBar = () => {
+const Bar = () => {
   return (
     <>
       <DesktopSidebar />
@@ -10,7 +10,7 @@ const SideBar = () => {
   );
 };
 
-export default SideBar;
+export default Bar;
 
 const DesktopSidebar = () => {
   return (
